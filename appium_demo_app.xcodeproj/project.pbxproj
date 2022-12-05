@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3942069E293E429C0035F9C4 /* BaseRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942069D293E429C0035F9C4 /* BaseRobot.swift */; };
+		394206A1293E44B20035F9C4 /* HomeScreenRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394206A0293E44B20035F9C4 /* HomeScreenRobot.swift */; };
 		39709E71293E3C91008443B2 /* appium_demo_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39709E70293E3C91008443B2 /* appium_demo_appApp.swift */; };
 		39709E73293E3C91008443B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39709E72293E3C91008443B2 /* ContentView.swift */; };
 		39709E75293E3C92008443B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39709E74293E3C92008443B2 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3942069D293E429C0035F9C4 /* BaseRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRobot.swift; sourceTree = "<group>"; };
+		394206A0293E44B20035F9C4 /* HomeScreenRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRobot.swift; sourceTree = "<group>"; };
 		39709E6D293E3C91008443B2 /* appium_demo_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appium_demo_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39709E70293E3C91008443B2 /* appium_demo_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appium_demo_appApp.swift; sourceTree = "<group>"; };
 		39709E72293E3C91008443B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3942069C293E427E0035F9C4 /* test_helper */ = {
+			isa = PBXGroup;
+			children = (
+				3942069D293E429C0035F9C4 /* BaseRobot.swift */,
+			);
+			path = test_helper;
+			sourceTree = "<group>";
+		};
+		3942069F293E449F0035F9C4 /* homescreen */ = {
+			isa = PBXGroup;
+			children = (
+				394206A0293E44B20035F9C4 /* HomeScreenRobot.swift */,
+			);
+			path = homescreen;
+			sourceTree = "<group>";
+		};
 		39709E64293E3C91008443B2 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +141,8 @@
 		39709E8A293E3C92008443B2 /* appium_demo_appUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3942069F293E449F0035F9C4 /* homescreen */,
+				3942069C293E427E0035F9C4 /* test_helper */,
 				39709E8B293E3C92008443B2 /* appium_demo_appUITests.swift */,
 				39709E8D293E3C92008443B2 /* appium_demo_appUITestsLaunchTests.swift */,
 			);
@@ -274,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3942069E293E429C0035F9C4 /* BaseRobot.swift in Sources */,
 				39709E8C293E3C92008443B2 /* appium_demo_appUITests.swift in Sources */,
 				39709E8E293E3C92008443B2 /* appium_demo_appUITestsLaunchTests.swift in Sources */,
+				394206A1293E44B20035F9C4 /* HomeScreenRobot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
