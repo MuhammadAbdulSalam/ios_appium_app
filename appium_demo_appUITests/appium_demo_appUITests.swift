@@ -9,12 +9,6 @@ import XCTest
 
 final class appium_demo_appUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-    }
-
-    override func tearDownWithError() throws {}
-
     func testExample() throws {
         let app = XCUIApplication()
         
@@ -23,9 +17,6 @@ final class appium_demo_appUITests: XCTestCase {
             .staticElementsExist()
             .btnClickMeTab()
             .confirmTextChange(query: "New Text")
-        
     }
-    
-
     
 }
