@@ -10,30 +10,35 @@ import XCTest
 
 final class HomeScreenRobot : BaseRobot{
     
-    private lazy var tvHelloWorld    = app.staticTexts["Hello, World!"]
-    private lazy var ivGlobe         = app.images["Globe"]
-    private lazy var btnClick        = app.buttons["Click Me"]
+    private lazy var imgGlobe        = app.images["Globe"]
+    private lazy var btnClick        = app.buttons["Click-Me"]
+    private lazy var btnClickAgain   = app.buttons["Click-Again"]
 
     @discardableResult
-    func staticElementsExist() -> Self {
-        assert(tvHelloWorld, [.exists])
-        assert(ivGlobe, [.exists])
+    func checkIfGlobeImageExist() -> Self {
+        assert(app.images["Globe"], [.exists])
         return self
     }
     
-    
     @discardableResult
-    func confirmTextChange(query: String) -> Self {
+    func checkIfLabelExist(query: String) -> Self {
         assert(app.staticTexts[query], [.exists])
         return self
     }
     
-    
     @discardableResult
-    func btnClickMeTab() -> Self {
+    func tapClickMeButton() -> Self {
         tap(btnClick)
         return self
     }
+    
+    @discardableResult
+    func tapClickAgainButton() -> Self {
+        tap(btnClickAgain)
+        return self
+    }
+    
+    
     
  
 }

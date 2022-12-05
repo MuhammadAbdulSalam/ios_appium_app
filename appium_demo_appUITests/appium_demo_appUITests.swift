@@ -14,9 +14,13 @@ final class appium_demo_appUITests: XCTestCase {
         
         HomeScreenRobot(app)
             .start()
-            .staticElementsExist()
-            .btnClickMeTab()
-            .confirmTextChange(query: "New Text")
+            .checkIfLabelExist(query: "Hello, World!")
+            .checkIfGlobeImageExist()
+            .tapClickMeButton()
+            .checkIfLabelExist(query: "First Change")
+            .tapClickAgainButton()
+            .checkIfLabelExist(query: "Second Change")
+            
     }
     
 }

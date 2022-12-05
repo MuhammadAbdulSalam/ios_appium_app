@@ -16,8 +16,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text($testUi.wrappedValue)
-            Button("Click Me"){
-                self.testUi = "New Text"
+            Button("Click-Me"){
+                self.testUi = "First Change"
+            }
+            Button("Click-Again"){
+                self.testUi = "Second Change"
             }
         }
         .padding()
