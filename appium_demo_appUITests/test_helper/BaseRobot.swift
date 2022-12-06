@@ -43,6 +43,11 @@ class BaseRobot{
           return self
       }
 
+    @discardableResult
+    func checkIfLabelExist(query: String) -> Self {
+        assert(app.staticTexts[query], [.exists])
+        return self
+    }
     
 }
 

@@ -14,13 +14,13 @@ final class appium_demo_appUITests: XCTestCase {
         
         HomeScreenRobot(app)
             .start()
-            .checkIfLabelExist(query: "Hello, World!")
-            .checkIfGlobeImageExist()
-            .tapClickMeButton()
-            .checkIfLabelExist(query: "First Change")
-            .tapClickAgainButton()
-            .checkIfLabelExist(query: "Second Change")
-            
+            .checkIfLabelExist(query: "Default Currency")
+            .checkIfLabelExist(query: "EUR")
+            .checkIfLabelExist(query: "Amount")
+            .checkIfLabelExist(query: "Default Currency")
+            .tapFetchClick()
+            .tapHistoryClick()
+                     
     }
     
 }
