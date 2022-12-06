@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3921B10C293FB3C500F9A13D /* UiGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3921B10B293FB3C500F9A13D /* UiGenerator.swift */; };
 		3942069E293E429C0035F9C4 /* BaseRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942069D293E429C0035F9C4 /* BaseRobot.swift */; };
 		394206A1293E44B20035F9C4 /* HomeScreenRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394206A0293E44B20035F9C4 /* HomeScreenRobot.swift */; };
 		39709E71293E3C91008443B2 /* appium_demo_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39709E70293E3C91008443B2 /* appium_demo_appApp.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3921B10B293FB3C500F9A13D /* UiGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiGenerator.swift; sourceTree = "<group>"; };
 		3942069D293E429C0035F9C4 /* BaseRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRobot.swift; sourceTree = "<group>"; };
 		394206A0293E44B20035F9C4 /* HomeScreenRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRobot.swift; sourceTree = "<group>"; };
 		39709E6D293E3C91008443B2 /* appium_demo_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appium_demo_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				39709E72293E3C91008443B2 /* ContentView.swift */,
 				39709E74293E3C92008443B2 /* Assets.xcassets */,
 				39709E76293E3C92008443B2 /* Preview Content */,
+				3921B10B293FB3C500F9A13D /* UiGenerator.swift */,
 			);
 			path = appium_demo_app;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3921B10C293FB3C500F9A13D /* UiGenerator.swift in Sources */,
 				39709E73293E3C91008443B2 /* ContentView.swift in Sources */,
 				39709E71293E3C91008443B2 /* appium_demo_appApp.swift in Sources */,
 			);
